@@ -5,7 +5,7 @@ import deleteMessage from "../functions/deleteMessage";
 const Message = ({ msg, getAllMessages, user }) => {
   const borrarMensaje = () => {
     deleteMessage(msg.id);
-    getAllMessages();
+    // getAllMessages();
   };
 
   return (

@@ -32,7 +32,7 @@ export default function Home({ user }) {
     <div>
       <NavBar user={user} />
       <h3>Hola {user.displayName ? user.displayName : user.data.name}</h3>
-      <p>version 2</p>
+      <p>version 3!!!</p>
 
       {/* <PendienteForm refreshAllPendientes={refreshAllPendientes} />
       <div>

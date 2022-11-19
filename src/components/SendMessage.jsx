@@ -1,7 +1,7 @@
 import React from "react";
 import crearMensaje from "../functions/createMessage";
 
-const SendMessage = ({ user, getAllMessages }) => {
+const SendMessage = ({ user }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let message = e.target.message.value;
@@ -15,9 +15,8 @@ const SendMessage = ({ user, getAllMessages }) => {
     console.log(data);
     console.log(user);
 
+    e.target.message.value = "";
     await crearMensaje(data);
-    getAllMessages();
-    message = "";
   };
 
   return (
