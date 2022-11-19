@@ -3,6 +3,7 @@ import useUser from "../hooks/useUser";
 
 const MoreInfo = () => {
   const {authUser, data} = useUser();
+  console.log(data);
   return (
     <div>
       <h1>Info del User</h1>

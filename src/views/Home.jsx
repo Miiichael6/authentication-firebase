@@ -31,8 +31,8 @@ export default function Home({ user }) {
   return (
     <div>
       <NavBar user={user} />
-      <p>Hola {user.displayName ? user.displayName : user.data.name}</p>
-
+      <h3>Hola {user.displayName ? user.displayName : user.data.name}</h3>
+      <p>version 2</p>
 
       {/* <PendienteForm refreshAllPendientes={refreshAllPendientes} />
       <div>
@@ -48,9 +48,9 @@ export default function Home({ user }) {
           />
           ))}
         </div> */}
-        <MoreInfo />
+      {/* <MoreInfo /> */}
       <h2>Mensajes</h2>
-      <Chat user={user}/>
+      <Chat user={user} />
     </div>
   );
 }
